@@ -83,7 +83,7 @@ body {
 .tail {
     position: relative;
     max-width: 500px;
-    height:  calc(50vh);
+    height:  calc(40vh);
     background-color: #f1f1f144; /* 배너의 배경색 */
     margin-top: 20px;
     border-top-left-radius: 40px;
@@ -93,11 +93,15 @@ body {
 }
 
 .tail h1 {
-    margin: 0; /* 기본 마진 제거 */
-    font-size: 24px; /* 이름 텍스트의 글꼴 크기 */
+    margin: 0;
+    font-size: 24px;
 }
 
 .tail h2 {
-    margin: 0; /* 기본 마진 제거 */
-    font-size: 20px; /* 이름 텍스트의 글꼴 크기 */
+    margin: 0; 
+    font-size: 20px;
+}
+
+.tail h3 {
+    margin: 0; 
 }
