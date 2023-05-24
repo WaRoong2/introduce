@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>LIM SE JUN</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="banner">
+            <h1>ABOUT ME</h1>
+        </div>
+        <div class="grid-container">
+            <a href="https://github.com/WaRoong2" class="rounded-button github">
+                <img src="https://cdn.simpleicons.org/github/white" alt="Button 1">
+            </a>
+            <a href="https://blog.naver.com/waroong2" class="rounded-button naver">
+                <img src="https://cdn.simpleicons.org/naver/white" alt="Button 2">
+            </a>
+            <a href="https://three-jun.tistory.com/" class="rounded-button tistory">
+                <img src="https://cdn.simpleicons.org/tistory/white" alt="Button 3">
+            </a>
+            <a href="https://www.instagram.com/unc._.3s/?hl=ko" class="rounded-button instagram">
+                <img src="https://cdn.simpleicons.org/instagram/white" alt="Button 4">
+            </a>
+        </div>
+        <div class="tail">
+            <h1>Contact</h1>
+            <h3>kakao / email : lsj1137@naver.com</h3>
+        </div>
+    </div>
+    <script>
+        var maxBorderRadius = 40; // 최소 모서리 반지름 값
+      
+        window.addEventListener('resize', updateButtonRadius);
+      
+        function updateButtonRadius() {
+          var buttons = document.getElementsByClassName('rounded-button');
+
+          var buttonWidth = window.innerWidth;
+          var maxRadius = Math.max(buttonWidth / 25, maxBorderRadius);
+          console.log(buttonWidth/25,maxBorderRadius);
+          
+          // 가져온 요소들에 대한 작업 수행
+          for (var i = 0; i < buttons.length; i++) {
+            buttons[i].style.borderRadius = maxRadius + 'px';
+          }
+        }
+      
+        // 초기에 버튼 모서리 반지름 설정
+        updateButtonRadius();
+    </script>
+  </body>
+</html>

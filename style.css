@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner {
+    position: relative;
+    max-width: 500px;
+    background-color: #f1f1f144; /* 배너의 배경색 */
+    margin-bottom: 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding: 20px; /* 내부 여백 */
+    z-index: 1; /* 배너의 층위 설정 */
+}
+  
+.banner h1 {
+    margin: 0; /* 기본 마진 제거 */
+    font-size: 24px; /* 이름 텍스트의 글꼴 크기 */
+}
+.banner h2 {
+    margin: 0; /* 기본 마진 제거 */
+    font-size: 20px; /* 이름 텍스트의 글꼴 크기 */
+}
+
+.grid-container {
+    position: relative;
+    display: grid;
+    align-items: first baseline;
+    justify-content: center;
+    max-width: 450px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    z-index: 0; /* 그리드 컨테이너의 층위 설정 */
+}
+
+.rounded-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(45vw);
+    height: calc(45vw);
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: calc(4vw);
+    overflow: hidden;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.rounded-button img {
+    width: 55%;
+    object-fit: cover;
+}
+
+.github{
+    background-color: #222222;
+}
+
+.naver{
+    background-color: #03C75A;
+}
+
+.tistory{
+    background-color: #eb531f;
+}
+
+.instagram{
+    background-color: #E4405F;
+}
+
+.tail {
+    position: relative;
+    max-width: 500px;
+    height:  calc(50vh);
+    background-color: #f1f1f144; /* 배너의 배경색 */
+    margin-top: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 20px; /* 내부 여백 */
+    z-index: 1; /* 배너의 층위 설정 */
+}
+
+.tail h1 {
+    margin: 0; /* 기본 마진 제거 */
+    font-size: 24px; /* 이름 텍스트의 글꼴 크기 */
+}
+
+.tail h2 {
+    margin: 0; /* 기본 마진 제거 */
+    font-size: 20px; /* 이름 텍스트의 글꼴 크기 */
+}
